@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Contact Page</title>
+	<style>
+		body{background-color: #e4d5b7;margin: 0 auto;}
+		@font-face{font-family: Adventuro;src: url(adventuro/Adventuro.ttf);}
+		@font-face{font-family: George;src: url(george/george.ttf)}
+		h1{font-family: Adventuro;text-align: center;color: #766d5d}
+		h2{text-align: center;font-family:George}
+		p{text-align: center;}
+		#nav-wrapper{background-color: #e4d5b7;margin: 0 auto;}
+
+		.nav{position: fixed;padding-top: 20px;padding-bottom: 42px;background-color: #e4d5b7;margin: 0 auto;width: 100%;top:0;right: 0}
+
+		.nav a{text-align: center;text-decoration: none;color: #766d5d;font-size: 17px;background-color: #e4d5b7;display: inline-block;width: 100px;float: right;}
+		.nav a:hover{text-decoration: underline;}
+
+		.name{top:0;left: 0;position: fixed;background-color:#e4d5b7;padding-left: 30px;}
+
+		.space{height: 100px}
+		#wrapper{margin: 0 auto;width: 1200px}
+		#form{margin: 0 auto;width: 600px}
+
+		.main{width: 285px;height:50px;border-radius: 10px;background-color: #e4d5b7;border: solid 2px #9CAF88;}
+
+		.email{width: 285px;height: 50px;margin-left: 5px;border-radius: 10px;background-color: #e4d5b7;border: solid 2px #9CAF88;}
+
+		.phone{width: 590px;height: 50px;margin-top: 10px;border-radius: 10px;background-color: #e4d5b7;border: solid 2px #9CAF88;}
+
+		.message{width:590px;height: 100px;margin-top: 10px;border-radius: 10px;background-color: #e4d5b7;border: solid 2px #9CAF88;}
+
+		.row{float: left;width: 590px;}
+		#submit-btn{margin-top: 10px;width: 100px;padding-top: 10px;padding-bottom: 10px;background-color: #766d5d;border-radius: 5px;color: white;border:solid 2px #766d5d;}
+		#submit-btn:hover{opacity: 0.5}
+	</style>
+</head>
+
+<body>
+
+<div id="nav-wrapper">
+<div class="nav">
+	<a href="contact.html">Contact</a>
+	<a href="resume.html">Resume</a>
+	<a href="main.html">Home</a>
+</div>
+
+<div id="name-wrapper">
+<div class="name">
+<h1>SC</h1>
+</div>
+</div>
+</div>
+
+<div class="space"></div>
+
+<div id="wrapper">
+<h2>Let's connect</h2>
+<p>Feel free to contact me here to talk about anything!</p>
+
+<form action="submission.html">
+
+<div id="form">
+		
+	<label for="fullname"></label>
+	<input class="main" type="text" placeholder="Full Name" required>
+
+
+	<label for="email"></label>
+	<input class="email" type="text" placeholder="Email" required>
+
+
+<div class="row">
+	<label for="phonenumber"></label>
+	<input class="phone" type="text" placeholder="Phone number" required>
+</div>
+
+
+<div class="row">
+<label for="message"></label>
+<input class="message" type="text" placeholder="Message" required>
+</div>
+
+	<button id="submit-btn" type="submit">Send</button>
+
+</div>
+</div>
+
+</form>
+</body>
+</html>

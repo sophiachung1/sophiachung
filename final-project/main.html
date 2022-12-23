@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Homepage</title>
+	<style>
+		body{background-color: #e4d5b7;margin: 0 auto;}
+		#wrapper{width: 1450px;margin: 0 auto;}
+		@font-face{font-family: Adventuro;src: url(adventuro/Adventuro.ttf)}
+		@font-face{font-family: Title;src: url(george/bold.ttf)}
+		h1{font-family: Adventuro;text-align: center;color: #766d5d}
+		h2{color: #766d5d;font-weight: bold;font-family: Title}
+
+		#nav-wrapper{background-color: #e4d5b7;margin: 0 auto;}
+
+		.nav{position: fixed;padding-top: 20px;padding-bottom: 42px;background-color: #e4d5b7;margin: 0 auto;width: 100%;top:0;right: 0}
+
+		.nav a{text-align: center;text-decoration: none;color: #766d5d;font-size: 17px;background-color: #e4d5b7;display: inline-block;width: 100px;float: right;}
+		.nav a:hover{text-decoration: underline;}
+
+		
+		.name{top:0;left: 0;position: fixed;background-color:#e4d5b7;padding-left: 30px;}
+		
+		#about{width: 1200px;height: 300px;background: rgba(255,255,255,0.3);margin: 0 auto;padding: 20px;border-radius: 20px}
+		.about-writing{width: 500px;float: left;}
+		.profile{width: 200px;float: left;padding-right: 100px;}
+		.clearfloat{clear: both;}
+		
+		.space{height: 10px}
+		.space-1{height: 100px}
+		.row{display: flex;width: 1200px;margin: 0 auto;}
+		.column-1{background: rgba(255,255,255,0.3);height: 800px;width: 600px;border-radius: 20px;padding: 20px;float: left;margin-left: 10px}
+		.column-2{background: rgba(255,255,255,0.3);height: 800px;width: 600px;border-radius: 20px;padding: 20px;float: left;margin-left: 10px;padding-right: 150px}
+		.bread{width:150px}
+
+		#row1{width:600px;height: auto;}
+		.text{float:left;width: 250px;padding-left: 60px}
+		.video{float: left;width: 250px;}
+
+		#row2{width: 800px;float:left; }
+		
+	</style>
+</head>
+
+<body>
+
+<div id="wrapper">
+
+<div id="nav-wrapper">
+<div class="nav">
+	<a href="contact.html">Contact</a>
+	<a href="resume.html">Resume</a>
+	<a href="main.html">Home</a>
+</div>
+
+<div id="name-wrapper">
+<div class="name">
+<h1>SC</h1>
+</div>
+</div>
+</div>
+
+<div class="clearfloat"></div>
+<div class="space-1"></div>
+
+<div id="about">
+	<img class="profile" src="images/profile.jpeg" alt="Profile picture">
+
+	<div class="about-writing">
+	<h2>About Me</h2>
+	<p>Hello! My name is Sophia Chung and I am from Chicago, Illinois. I am currently a student at the University of Southern California studying East Asian Area Studies at Dornsife and minoring in Web Development at Viterbi. My interest in UI/UX design and web development has allowed me to pursue new skills like coding to learn about the different creative processes in technology. You can usually find me editing videos, coding, baking, hanging out with friends, or dancing.</p>
+	</div>
+</div>
+
+<div class="space"></div>
+
+<div class="row">
+
+<div class="column-1">
+	<h2>Hobbies</h2>
+	<h3>Dance</h3>
+	<video width="300" height="200" controls>
+		<source src="dance.mp4" type="video/mp4">
+		</video>
+	<h3>Baking</h3>
+	<img class="bread" src="images/banana.jpeg" alt="Banana Bread">
+	<img class="bread" src="images/bread.jpeg" alt="Garlic Bread">
+</div>
+
+<div class="clearfloat"></div>
+
+<div class="column-2">
+	<h2>Youtube</h2>
+
+	<div id="row1">
+	<div class="video">
+	<iframe width="300" height="200" src="https://www.youtube.com/embed/KDnuWTmVBGg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+	</div>	
+	<div class="text">
+	This is about my solo trip in Korea where I explored Seoul and ate a lot of delicious foods.
+	</div>
+	</div>
+
+	<div id="row2">
+		<div class="video">
+<iframe width="300" height="200" src="https://www.youtube.com/embed/AGnxL9sGNQw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
+<div class="text">
+This is a vlog about my solo trip to Korea. In this video, you will see what living in Seoul,Korea is like for a week.</div>
+</div>
+
+<div id="row3">
+	<div class="video">
+<iframe width="300" height="200" src="https://www.youtube.com/embed/p_5_uQklnNA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
+<div class="text">
+This is a vlog about my trip to New York with my friend. I got to explore Manhattan and Brooklyn.</div>
+</div>
+
+</div>
+</div>
+
+</div>
+</body>
+</html>
