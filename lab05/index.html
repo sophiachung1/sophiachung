@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Form Page</title>
+	<style>
+		.form-row{margin: 10px 0px}	
+		.main-label{width: 20%;float: left;}
+		#question{width: 50%;}
+		button{padding: 10px 20px;}
+		#submit-btn{background-color: lightblue;}
+	</style>
+</head>
+<body>
+	<form action="confirmation.html">
+		
+		<h1>Yoga Retreat</h1>
+
+<div class="form-row">
+	<label class="main-label" for="name">Name:</label>
+	<input type="text" placeholder="Your name" required>
+</div>
+
+<div class="form-row">
+	<label class="main-label" for="location">Which location would you be able to attend?</label>
+		<label for="Village">
+			<input id="Village" type="radio" name="Village" value="Village">Village
+		</label>
+		<label for="Studio">
+			<input id="Studio" type="radio" name="Dance studio" value="Dance studio">Dance studio
+		</label>
+		<label for="Santa-Monica">
+	<input id="Santa-Monica" type="radio" name="Santa Monica" value="Santa Monica">Santa Monica
+	</label>
+</div>
+
+<div class="form-row">
+	<label class="main-label">Favorite Yoga Channel?</label>
+		<label for="blogilates">
+		<input id="blogilates" type="checkbox" name="blogilates" value="blogilates">Blogilates
+		</label>
+		<label for="adriene">
+		<input id="adriene" type="checkbox" name="adriene" value="adriene">Yoga with Adriene
+		</label>
+		<label for="TaraStiles">
+	<input input="tarastiles" type="checkbox" name="tarastiles" value="tarastiles">TaraStiles
+	</label>
+</div>	
+
+<div class="form-row">
+<label class="main-label" for="type-yoga">Favorite type of Yoga?</label>
+<select id="type-yoga">
+	<option value="Meditation">Meditation</option>
+	<option value="Restorative">Restorative</option>
+	<option value="Hot yoga">Hot yoga</option>
+</select>
+</div>
+
+<div class="form-row">
+<label class="main-label" for="question">Comments/Questions:</label>
+<textarea id="question"placeholder="Comments/questions"></textarea>
+</div>
+
+<div class="form-row">
+<label for="terms">
+<input id="terns" type="checkbox" name="terms" value="terms" required>
+	I accept terms and conditions
+</label>
+</div>
+
+<div class="form-row">
+<button id="submit-btn" type="submit">Submit</button>
+<button type="rest">Reset</button>
+</div>
+</form>
+
+</body>
+</html>
