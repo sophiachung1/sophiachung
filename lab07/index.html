@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Lab07:Image Puzzle</title>
+	<style>
+		body{background: url(cloud.jpeg);background-size: cover;margin: 0 auto;}
+		h1{font-size: 70px;text-shadow: 3px 3px #a38352;color: white;text-align: center;}
+		img{float: left;width: 200px;height: 200px;}
+		#wrapper{background: rgba(255, 255, 255, .5);width: 800px;margin-left: auto;margin-right: auto;padding: 35px;}
+		#gallery{text-align: center;margin-left: auto;margin-right: auto;width: 600px;position: relative;}
+		.row1col3{position: relative;top: -15px;right: -10px;z-index: 1;box-shadow: 5px 5px 10px #838996;}
+		.row2col1{position: relative;top: 10px;left: -10px;z-index: 1;box-shadow: 5px 5px 10px #838996;}
+		.stop{clear: both;}
+	</style>
+	
+</head>
+<body>
+
+	<h1>Cafe Date</h1>
+
+	<div id="wrapper">
+
+		<div id="gallery">
+			<img src="image/row-1-column-1.jpg" alt="row1col1">
+			<img src="image/row-1-column-2.jpg" alt="row1col2">
+			<img src="image/row-1-column-3.jpg" alt="row1col3" class="row1col3">
+			<img src="image/row-2-column-1.jpg" alt="row2col1" class="row2col1">
+			<img src="image/row-2-column-2.jpg" alt="row2col2">
+			<img src="image/row-2-column-3.jpg" alt="row2col3">
+			<img src="image/row-3-column-1.jpg" alt="row3col1">
+			<img src="image/row-3-column-2.jpg" alt="row3col2">
+			<img src="image/row-3-column-3.jpg" alt="row3col3">
+		</div>
+		<div class="stop"></div>
+	</div>
+</body>
+</html>

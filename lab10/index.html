@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Animation</title>
+
+	<style>
+		body, html{margin: 0 auto;height: 100%;}
+
+	#background{background-image: url("imposter-background.jpg");background-position: center;background-size: cover;height: 100%;background-repeat: no-repeat;}
+	.carrot{position: absolute;margin-top: 25%;}
+	.thought{background-color:#fff;border-radius: 10px;text-align: center;padding: 10px;width: 60px;position: relative;}
+
+	.thought:before{position: absolute;width:0px;height:0px;bottom:-25px;left:28px;content: "";border-left: 24px solid transparent;border-right: 12px solid #fff;border-top: 12px solid #fff;border-bottom: 20px solid transparent;left: 32px;bottom: -20px;}
+
+ 	#movement{position: fixed;padding-top: 25%;margin-left: 25%;}
+ 	
+	#animation{transition: padding-left 5s;}
+	#animation:hover{padding-left: 550px;}
+	</style>
+
+</head>
+
+<body>
+
+<div id="background">
+<div id="animation">
+<div id="movement">
+	<div class="thought">
+		hehehe
+	</div>
+</div>
+	<div class="carrot">
+	<img src="among-us-carrot.gif" alt="Among Us" id="carrotwalking">
+	</div>
+</div>
+</div>
+
+
+
+</body>
+</html>
