@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Gallery</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+
+<style>
+	#topnav{width: 750px;margin: 0 auto;position: relative;z-index: 999;background-color: #FAEACB;}
+	#topnav:after{content: "";clear: both;display: table;}
+		#topnav a{width: 235px;height: 50px;display: inline-block;text-align: center;line-height: 50px;color: #000;text-decoration: none;}
+		#nav-wrapper{background-color: #FAEACB}
+		#topnav a:hover{background-color: white;}
+		#topnav ul{list-style-type: none;margin: 0;padding: 0;background-color: #FAEACB;}
+		#topnav ul ul{visibility: hidden;position: absolute;}
+
+		#topnav li{float: left;text-align: center;background-color: #FAEACB;position: relative;}
+		#topnav li:hover > ul{visibility: visible;}
+
+
+		
+		.arcade{width: 245px;height: 200px;margin: 5px;overflow: hidden;}
+		.football{width: 230px;height: 200px;margin: 5px;overflow: hidden;}
+		.apple{width: 245px;height: 200px;margin: 5px;overflow: hidden;}
+		
+		.blanket{width: 150px;height: 150px;margin: 5px;overflow: hidden;}
+		.sibling{width: 200px;height: 150px;margin: 5px;overflow: hidden;}
+		.each{width: 210px;height: 150px;margin: 5px;overflow: hidden;}
+		.case{width: 150px;height: 150px;margin: 5px;overflow: hidden;}
+		#content{width: 750px;background-color: #FFF;margin: 0 auto;}
+		body{background-color:#F4C2C2;}
+		#wrapper{width: 1000px;margin: 0 auto;background-color: #FFF;}
+		#header{background-image: url("ta.jpg");height: 400px;background-size: cover;text-align: center;opacity: 0.6;}
+		.clearflot{clear: both;}
+		.column{float: left;display: flex;position: relative;overflow: hidden;}
+		.row{display: flex;width: 100%;}
+		#footer h6{margin: 0;padding: 20px;}
+		#footer{background-color: #9CC0E7;padding: 5px;text-align: center;margin: 0;}
+		.overlay{background-color: rgba(0, 0, 0, 0.6);color: white;top: 0;position: absolute;top: 0;bottom: 0;left: 0;right: 0;text-align: center;line-height: 200px;visibility: hidden;}
+		.column:hover .overlay{visibility: visible;}
+		h1{font-family: 'Anton', sans-serif;top: 0;}
+		
+
+</style>
+
+</head>
+
+<body>
+	<div id="header">
+	<h1><strong>Gallery</strong></h1>
+	</div>
+
+	<div id="nav-wrapper">
+
+		<div id ="topnav">
+			<ul>
+			<li>
+				<a class="home" href="index.html">Home</a>
+			<ul>
+			<li><a href="">About</a></li>
+			<li><a href="">Filming</a></li>
+			<li><a href="">Soundtrack</a></li>
+		</ul>
+	</li>
+			<li><a class="gallery" href="gallery.html">Gallery</a></li>
+			</ul>	
+			<div class="clearfloat"></div>
+		</div>
+	</div>
+
+<div id="wrapper">
+
+<div id="content">
+
+	<div class="thumbnail">
+	
+	<div class="row">
+		<div class="column">
+	<img class="arcade" src="gallery/arcade.jpg" alt="having fun at arcade">
+	<div class="overlay">
+		<p>Having fun at arcade</p>
+	</div>
+	</div>
+		<div class="column">
+	<img class="football" src="gallery/football.jpg" alt="at a football field">
+	<div class="overlay">
+		<p>Together at football field</p>
+	</div>
+</div>
+<div class="column">
+	<img class="apple" src="gallery/light.jpg" alt="romantic lights">
+	<div class="overlay">
+		<p>Dancing at prom</p>
+	</div>
+</div>
+</div>
+	
+<div class="clearfloat"></div>
+
+<div class="row">
+<div class="column">
+		<img class="arcade" src="gallery/photoshoot.jpg" alt="photoshoot for movie">
+		<div class="overlay">
+			<p>Photoshoot</p>
+		</div>
+	</div>
+	<div class="column">
+		<img class="football" src="gallery/plant.jpg" alt="siblings hugging">
+		<div class="overlay">
+			<p>Siblings together</p>
+		</div>
+</div>
+		<div class="column">
+		<img class="apple" src="gallery/princess.jpg" alt="John and Laura">
+		<div class="overlay">
+			<p>Dancing with John</p>
+		</div>
+		</div>
+</div>
+
+<div class="clearfloat"></div>
+		
+		<div class="row">
+			<div class="column">
+		<img class="blanket" src="gallery/prom.jpg" alt="Prom dates">
+		<div class="overlay">
+			<p>Prom Double Date</p>
+		</div>
+	</div>
+	<div class="column">
+		<img class="sibling" src="gallery/sister.jpg" alt="Sibling bonding">
+		<div class="overlay">
+			<p>Sibling bonding time</p>
+		</div>
+	</div>
+	<div class="column">
+		<img class="each" src="gallery/together.jpg" alt="Noah and Laura">
+		<div class="overlay">
+			<p>Going camping</p>
+		</div>
+	</div>
+	<div class="column">
+		<img class="case" src="gallery/stairs.jpg" alt="third wheeling">
+		<div class="overlay">
+			<p>Third wheeling</p>
+		</div>
+	</div>
+</div>
+<div class="clearfloat"></div>
+
+</div>
+</div>
+<div id="footer">
+<h6>Tune in on Netflix!</h6>
+</div>
+	
+
+
+</body>
+</html>
